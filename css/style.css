@@ -1,0 +1,14 @@
+#login-form input {
+  background-color: aqua;
+
+  border-radius: 10px;
+}
+
+#login-form input:last-child {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
