@@ -1,0 +1,30 @@
+#login-form input {
+  background-color: transparent;
+  font-size: 40px;
+  padding: 20px;
+  border: none;
+  border-bottom: 3px solid white;
+  color: #fff;
+}
+#login-form input::placeholder {
+  color: #fff;
+}
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form input:last-child {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+#login-form input:last-child:hover {
+  background: rgba(240, 240, 240, 0.3);
+  transition: all 0.3s;
+}
+
+#greeting {
+  font-size: 48px;
+  margin-top: 30px;
+}

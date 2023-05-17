@@ -1,6 +1,7 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
+const fold = document.querySelector(".fold");
 
 const TODOS_KEY = "todos";
 
@@ -52,3 +53,8 @@ if (savedToDos !== null) {
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }
+
+fold.addEventListener("click", () => {
+  const todoWrapper = document.querySelector(".todo-wrapper");
+  todoWrapper.classList.toggle("hide");
+});
