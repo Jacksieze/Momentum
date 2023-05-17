@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,34 +8,43 @@
     <title>Momentum</title>
   </head>
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <main id="bg_container">
+      <div class="clock-wrapper">
+        <h2 id="clock">00:00:00</h2>
+        <form id="login-form" class="hidden">
+          <input required maxlength="15" type="text" placeholder="What is your name?" />
+          <input type="submit" value="Log In" />
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <div class="todo-wrapper hidden">
+        <div class="fold"><ion-icon name="list-outline"></ion-icon></div>
+        <form id="todo-form">
+          <h2>To Do List</h2>
+          <input type="text" placeholder="Write here and Press Enter" />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="log-out"><ion-icon name="exit-outline"></ion-icon></div>
+    </main>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/backgound.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
